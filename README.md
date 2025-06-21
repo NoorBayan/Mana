@@ -1,7 +1,6 @@
 # Mana (مَعنَى): A Thematically Annotated Corpus of Arabic Poetry
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![Paper](https://img.shields.io/badge/Read%20the%20Paper-Data%20in%20Brief-b51e44.svg)](https://doi.org/YOUR_PAPER_DOI_HERE) <!-- <-- الرجاء وضع رابط الـ DOI الخاص بالورقة عند نشره -->
 [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Z6r-Q37jYzyjHcR-nAtRXRfr9BTAWLYG?usp=drive_link) 
 
 ---
@@ -69,7 +68,7 @@ The thematic annotation in Mana is guided by a custom-built hierarchical taxonom
 
 To enhance the accessibility and usability of the **Mana** corpus, we have developed a user-friendly interactive notebook. This tool allows anyone to visually explore, filter, and analyze the dataset directly in their browser—no coding required.
 
-➡️ **[Open the Interactive Explorer in Google Colab](https://colab.research.google.com/github/YOUR_USERNAME/YOUR_REPO/blob/main/Mana_Interactive_Explorer.ipynb)** <!-- <-- الرجاء تعديل الرابط -->
+➡️ **[Open the Interactive Explorer in Google Colab](https://colab.research.google.com/drive/1Z6r-Q37jYzyjHcR-nAtRXRfr9BTAWLYG?usp=drive_link)
 
 The notebook provides two main interactive dashboards:
 
