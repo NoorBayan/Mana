@@ -83,8 +83,12 @@ This feature allows you to navigate the corpus through its rich thematic hierarc
 
 This browser makes discovering connections and finding specific examples of poetic expression incredibly easy.
 
-
 *Figure 1: The interactive poem browser in action. Users can select thematic categories to filter poems and view a detailed analysis with a dynamic chart for each poem.*
+
+
+ <p align="center">
+   <img src = "https://raw.githubusercontent.com/NoorBayan/Mana/main/images/ThematicPoemBrowser.png" width = "1000px"/>
+ </p>
 
 #### 2. Cross-Era Thematic Analysis Dashboard
 
@@ -93,6 +97,11 @@ This advanced analytical tool is designed for comparative literary studies. It e
 *   **Select a theme and a historical era**: For instance, analyze "Praise Poetry" during the "Umayyad Period".
 *   **Generate dynamic bar charts**: The tool automatically processes the data and generates a series of hierarchical bar charts. Each chart breaks down the selected primary theme into its sub-themes, showing the frequency of each within the chosen era.
 *   **Uncover literary trends**: This dashboard enables data-driven insights into questions like: "Which sub-themes of Satire were most prevalent in the Abbasid era compared to the Modern era?".
+
+
+ <p align="center">
+   <img src = "https://raw.githubusercontent.com/NoorBayan/Mana/main/images/ThematicAnalysis.png" width = "800px"/>
+ </p>
 
 This powerful feature transforms the Mana corpus from a static dataset into a dynamic laboratory for literary and historical inquiry.
 
