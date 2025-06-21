@@ -98,5 +98,15 @@ This powerful feature transforms the Mana corpus from a static dataset into a dy
 
 ### License
 
-The Mana corpus is distributed under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license. You are free to share and adapt this material for any purpose, provided you give appropriate credit.
+This work is licensed under the **Creative Commons Attribution 4.0 International License**.
 
+[![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0/)
+
+This means you are free to:
+*   **Share** — copy and redistribute the material in any medium or format.
+*   **Adapt** — remix, transform, and build upon the material for any purpose, even commercially.
+
+Under the following terms:
+*   **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made.
+
+For the full license text, please see the [LICENSE](https://github.com/NoorBayan/Mana/blob/main/LICENSE) file.
