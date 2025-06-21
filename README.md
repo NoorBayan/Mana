@@ -2,7 +2,7 @@
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Paper](https://img.shields.io/badge/Read%20the%20Paper-Data%20in%20Brief-b51e44.svg)](https://doi.org/YOUR_PAPER_DOI_HERE) <!-- <-- الرجاء وضع رابط الـ DOI الخاص بالورقة عند نشره -->
-[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/YOUR_REPO/blob/main/Mana_Interactive_Explorer.ipynb) <!-- <-- الرجاء تعديل الرابط -->
+[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Z6r-Q37jYzyjHcR-nAtRXRfr9BTAWLYG?usp=drive_link) 
 
 ---
 
