@@ -2,6 +2,18 @@
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Paper](https://img.shields.io/badge/Read%20the%20Paper-Data%20in%20Brief-b51e44.svg)](https://doi.org/YOUR_PAPER_DOI_HERE) <!-- <-- الرجاء وضع رابط الـ DOI الخاص بالورقة عند نشره -->
+[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/YOUR_REPO/blob/main/Mana_Interactive_Explorer.ipynb) <!-- <-- الرجاء تعديل الرابط -->
+
+---
+
+### Table of Contents
+- [Introduction](#introduction)
+- [Core Features](#core-features)
+- [Dataset Structure](#dataset-structure)
+- [Data Fields Explained](#data-fields-explained-mana_corpuscsv)
+- [Thematic Annotation Schema](#thematic-annotation-schema)
+- [Interactive Exploration with Google Colab](#interactive-exploration-with-google-colab)
+- [License](#license)
 
 ---
 
@@ -22,7 +34,7 @@ Mana is more than just a collection of texts; it's a feature-rich dataset design
 
 ### Dataset Structure
 
-The dataset is organized into a primary data file and a directory of metadata files, ensuring clarity and ease of use. Please note the main data file is named `mana_corpus.csv`.
+The dataset is organized into a primary data file and a directory of metadata files, ensuring clarity and ease of use. The main data file is named `mana_corpus.csv`.
 
 ```
 /
@@ -38,28 +50,53 @@ The dataset is organized into a primary data file and a directory of metadata fi
 
 This is the main file containing the poetic data. Below is a description of each column.
 
-| Column Name                   | Description                                                                   |
-| ----------------------------- | ----------------------------------------------------------------------------- |
-| `poem_id`                     | A unique identifier for each poem.                                            |
-| `poet_name`                   | The name of the poet in Arabic script.                                        |
-| `poem_title`                  | The title of the poem in Arabic script.                                       |
-| `poet_era`                    | A numerical key linking to the poet's historical period in `era_definitions.json`. |
-| `original_diwan_theme`        | The original theme ID from the source "Diwan" corpus, for reference.          |
-| `verses`                      | The complete text of the poem. Verses are separated by a newline (`\n`) character. |
-| `themes`                      | A semicolon-separated list of hierarchical theme IDs from our taxonomy.       |
-| `percentages`                 | A semicolon-separated list of relevance scores (as percentages) for each assigned theme. |
-
+| Column Name            | Description                                                                   |
+| ---------------------- | ----------------------------------------------------------------------------- |
+| `poem_id`              | A unique identifier for each poem.                                            |
+| `poet_name`            | The name of the poet in Arabic script.                                        |
+| `poem_title`           | The title of the poem in Arabic script.                                       |
+| `poet_era`             | The historical period of the poet, linking to `era_definitions.json`.         |
+| `original_diwan_theme` | The original theme from the source "Diwan" corpus, for reference.             |
+| `verses`               | The complete text of the poem, with verses typically stored as a list of strings. |
+| `themes`               | A list of hierarchical theme IDs from our taxonomy.                           |
+| `percentages`          | A list of relevance scores (as percentages) for each assigned theme.          |
 
 ### Thematic Annotation Schema
 
 The thematic annotation in Mana is guided by a custom-built hierarchical taxonomy. This schema, detailed in `corpus_metadata/hierarchical_thematic_taxonomy.json`, provides a structured vocabulary for poetic themes, capturing semantic relationships between them. Each theme entry includes a unique ID, Arabic and English names, a description, and its sub-themes.
 
+### Interactive Exploration with Google Colab
+
+To enhance the accessibility and usability of the **Mana** corpus, we have developed a user-friendly interactive notebook. This tool allows anyone to visually explore, filter, and analyze the dataset directly in their browser—no coding required.
+
+➡️ **[Open the Interactive Explorer in Google Colab](https://colab.research.google.com/github/YOUR_USERNAME/YOUR_REPO/blob/main/Mana_Interactive_Explorer.ipynb)** <!-- <-- الرجاء تعديل الرابط -->
+
+The notebook provides two main interactive dashboards:
+
+#### 1. Thematic Poem Browser
+
+This feature allows you to navigate the corpus through its rich thematic hierarchy. You can:
+
+*   **Drill-down through themes**: Start from broad categories (e.g., "Love Poetry") and progressively narrow down to specific sub-themes (e.g., "Chaste Love" -> "Love from a distance").
+*   **Instantly access poems**: Once a theme is selected, the interface populates a list of all poems annotated with that theme.
+*   **View detailed poem analysis**: Selecting a poem displays its full text, along with metadata (poet, era) and an interactive pie chart visualizing its thematic composition.
+
+This browser makes discovering connections and finding specific examples of poetic expression incredibly easy.
+
+
+*Figure 1: The interactive poem browser in action. Users can select thematic categories to filter poems and view a detailed analysis with a dynamic chart for each poem.*
+
+#### 2. Cross-Era Thematic Analysis Dashboard
+
+This advanced analytical tool is designed for comparative literary studies. It empowers users to investigate how poetic themes have evolved or varied across different historical periods. The key functionalities include:
+
+*   **Select a theme and a historical era**: For instance, analyze "Praise Poetry" during the "Umayyad Period".
+*   **Generate dynamic bar charts**: The tool automatically processes the data and generates a series of hierarchical bar charts. Each chart breaks down the selected primary theme into its sub-themes, showing the frequency of each within the chosen era.
+*   **Uncover literary trends**: This dashboard enables data-driven insights into questions like: "Which sub-themes of Satire were most prevalent in the Abbasid era compared to the Modern era?".
+
+This powerful feature transforms the Mana corpus from a static dataset into a dynamic laboratory for literary and historical inquiry.
 
 ### License
 
 The Mana corpus is distributed under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license. You are free to share and adapt this material for any purpose, provided you give appropriate credit.
 
-### Contact
-
-For questions, feedback, or collaborations, please reach out to the corresponding author:
-**Reema G. Al-anazi Nour** at `rgalanizy@pnu.edu.sa`.
