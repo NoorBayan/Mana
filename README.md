@@ -19,7 +19,7 @@
 
 ### Introduction
 
-Welcome to **Mana (مَعنَى)**, a comprehensive digital resource for Arabic poetry. This corpus provides a vast collection of approximately half a million poems, each meticulously annotated with multiple literary themes. Mana was developed to bridge a significant gap in digital resources for Arabic literature, offering a structured, machine-readable dataset ideal for computational analysis and academic research.
+Welcome to **Mana (مَعنَى)**, a comprehensive digital resource for Arabic poetry. This large-scale corpus provides a vast collection of poems drawn from centuries of literary tradition, with each work meticulously annotated with multiple literary themes. Mana was developed to bridge a significant gap in digital resources for Arabic literature, offering a structured, machine-readable dataset ideal for computational analysis and academic research.
 
 Our goal is to empower researchers, developers, and digital humanists with high-quality data to explore the rich tapestry of Arabic poetic heritage in new and innovative ways.
 
