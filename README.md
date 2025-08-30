@@ -12,6 +12,8 @@
 - [Data Fields Explained](#data-fields-explained-mana_corpuscsv)
 - [Thematic Annotation Schema](#thematic-annotation-schema)
 - [Interactive Exploration with Google Colab](#interactive-exploration-with-google-colab)
+- [About the Large-Scale Automated Annotations](#about-the-large-scale-automated-annotations)
+- [How to Cite](#how-to-cite)
 - [License](#license)
 
 ---
@@ -37,13 +39,20 @@ The dataset is organized into a primary data file and a directory of metadata fi
 
 ```
 /
-├── mana_corpus.csv                 # The primary data file with all poems and annotations.
+├── mana.csv                                 # The primary data file with all poems and annotations.
+│
 ├── corpus_metadata/
-│   ├── hierarchical_thematic_taxonomy.json  # Defines the multi-level thematic classification schema.
-│   ├── era_definitions.json                 # Maps era IDs to their names and descriptions.
-│   └── diwan_original_themes.json           # Provides context for theme IDs from the source corpus.
-└── README.md
+│   ├── hierarchical_thematic_taxonomy.json  # Defines the multi-level thematic classification.
+│   ├── era_definitions.json                 # Maps historical era IDs to their full names.
+│   └── diwan_original_themes.json           # Original theme mappings from the source corpus.
+│
+├── diwan.py                        # A utility library with helper functions for data processing.
+├── mana.py                         # A script with functions for exploring and visualizing the dataset.
+│
+├── README.md                       # This documentation file.
+└── LICENSE                         # The CC BY 4.0 license for the dataset.
 ```
+
 
 ### Data Fields Explained (`mana_corpus.csv`)
 
@@ -55,10 +64,9 @@ This is the main file containing the poetic data. Below is a description of each
 | `poet_name`            | The name of the poet in Arabic script.                                        |
 | `poem_title`           | The title of the poem in Arabic script.                                       |
 | `poet_era`             | The historical period of the poet, linking to `era_definitions.json`.         |
-| `original_diwan_theme` | The original theme from the source "Diwan" corpus, for reference.             |
-| `verses`               | The complete text of the poem, with verses typically stored as a list of strings. |
 | `themes`               | A list of hierarchical theme IDs from our taxonomy.                           |
 | `percentages`          | A list of relevance scores (as percentages) for each assigned theme.          |
+| `verses`               | The complete text of the poem, with verses typically stored as a list of strings. |
 
 ### Thematic Annotation Schema
 
@@ -103,6 +111,26 @@ This advanced analytical tool is designed for comparative literary studies. It e
  </p>
 
 This powerful feature transforms the Mana corpus from a static dataset into a dynamic laboratory for literary and historical inquiry.
+
+### About the Large-Scale Automated Annotations
+
+A significant portion of this corpus was annotated using the **[Maqasid Framework](https://github.com/NoorBayan/Maqasid)**, a deep learning model trained on the expert-annotated portion of this dataset. For a detailed explanation of this process and the nature of these computational annotations, please see the dedicated document: **[LARGE_SCALE_ANNOTATION.md](https://github.com/NoorBayan/Mana/blob/main/corpus/LARGE_SCALE_ANNOTATION.md)**.
+
+### How to Cite
+
+If you use the Mana corpus in your research, we kindly ask that you cite our paper. This helps other researchers find the work and allows us to track the project's impact.
+
+Please use the following BibTeX entry. We will update it with the full publication details as soon as they become available.
+
+```bibtex
+@article{Al-anazi2025Maqasid,
+  author    = {Reema G. Al-anazi and Wadee A. Nashir and Badriyya B. Al-onazi and Anoud A. Alhamad and Asma A. Al-Shargabi},
+  title     = {Maqasid: A Hybrid CNN-BiLSTM Framework for Nuanced Thematic Classification of Arabic Poetry},
+  journal   = {IEEE Access},
+  year      = {2025 (Forthcoming)},
+  note      = {Full publication details to be added upon release.}
+}
+```
 
 ### License
 
