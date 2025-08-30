@@ -1,0 +1,15 @@
+{
+    0: ("_", "_"),
+    1: ("العصر الجاهلي", "Pre-Islamic Era"),
+    2: ("العصر الإسلامي", "Islamic Era"),
+    3: ("المخضرمين", "Transitional Poets"),
+    4: ("العصر الأموي", "Umayyad Era"),
+    5: ("العصر العباسي", "Abbasid Era"),
+    6: ("العصر الأندلسي", "Andalusian Era"),
+    7: ("عصر ما بين الدولتين", "Interdynastic Era"),
+    8: ("العصر الأيوبي", "Ayyubid Era"),
+    9: ("العصر المملوكي", "Mamluk Era"),
+    10: ("العصر الفاطمي", "Fatimid Era"),
+    11: ("العصر العثماني", "Ottoman Era"),
+    12: ("العصر الحديث", "Modern Era")
+}
